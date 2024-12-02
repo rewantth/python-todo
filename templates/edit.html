@@ -1,0 +1,19 @@
+<!-- edit.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Todo</title>
+</head>
+<body>
+    <h1>Edit Todo Item</h1>
+    <form method="POST">
+        <label for="todoitem">Edit Todo Item:</label>
+        <input type="text" name="todoitem" value="{{ todo[1] }}" required>
+        <button type="submit">Update</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">Back to Todo List</a>
+</body>
+</html>
